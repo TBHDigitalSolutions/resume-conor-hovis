@@ -11,11 +11,26 @@ body {
 }
 
 /* Headings */
-h2,
-h3 {
+h2 {
+    font-size: 2.2vw;
     font-family: 'Aldrich', sans-serif;
-    color: #e5e6e7;
-    margin-bottom: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background-image: linear-gradient(180deg, #e5e6e7, #8a8d8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h3 {
+    font-size: 2.1vw;
+    font-family: 'Aldrich', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background-image: linear-gradient(180deg, #e5e6e7, #0EAFFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* Portfolio Section Styles */
@@ -34,10 +49,10 @@ h3 {
 /* General Text Styling in Portfolio Section */
 #portfolio p {
     font-size: 1.1rem;
-    line-height: 1.6;
-    color: #c9ced1;
-    max-width: 800px;
-    margin: 15px auto;
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
+    color: #f4f6f7;
+    margin-bottom: 20px;
 }
 
 /* Portfolio Cards Container */
@@ -64,12 +79,16 @@ h3 {
 
 .portfolio-card h3 {
     font-size: 1.4rem;
+    font-family: 'Aldrich', sans-serif;
+    font-weight: 600;
     color: #0EAFFB;
     margin: 10px 0;
 }
 
 .portfolio-card p {
     font-size: 1.1rem;
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
     line-height: 1.6;
     color: #d3d7da;
     margin: 20px 0;
@@ -78,7 +97,8 @@ h3 {
 /* Button Styles */
 .portfolio-card button {
     font-family: 'Aldrich', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
     padding: 12px 25px;
     color: #f4f6f7;
     background-color: #0EAFFB;
@@ -180,102 +200,4 @@ h3 {
 
 .close-button:hover {
     color: #b80e0e;
-}
-
-/* ===========================
-   * Responsive Adjustments *   
-=========================== */
-
-@media (max-width: 1024px) {
-    .portfolio-section {
-        padding: 40px 15px;
-    }
-
-    #portfolio p {
-        font-size: 1rem;
-    }
-
-    .portfolio-cards-container {
-        gap: 15px;
-    }
-
-    .portfolio-card {
-        padding: 15px;
-        max-width: 280px;
-    }
-
-    .portfolio-card h3 {
-        font-size: 1.3rem;
-    }
-
-    .portfolio-card p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .portfolio-section {
-        padding: 30px 10px;
-    }
-
-    #portfolio p {
-        font-size: 0.9rem;
-    }
-
-    .portfolio-card {
-        padding: 10px;
-        max-width: 100%;
-        margin-top: 20px;
-    }
-
-    .portfolio-card h3 {
-        font-size: 1.2rem;
-    }
-
-    .portfolio-card p {
-        font-size: 0.9rem;
-    }
-
-    .portfolio-thumbnail {
-        width: 120px;
-        height: 100px;
-    }
-
-    .cta-button {
-        font-size: 0.9rem;
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .portfolio-section {
-        padding: 20px 5px;
-    }
-
-    #portfolio p {
-        font-size: 0.85rem;
-    }
-
-    .portfolio-card {
-        padding: 10px;
-        max-width: 100%;
-    }
-
-    .portfolio-card h3 {
-        font-size: 1.1rem;
-    }
-
-    .portfolio-card p {
-        font-size: 0.85rem;
-    }
-
-    .portfolio-thumbnail {
-        width: 100px;
-        height: 80px;
-    }
-
-    .cta-button {
-        font-size: 0.85rem;
-        padding: 8px 16px;
-    }
 }
